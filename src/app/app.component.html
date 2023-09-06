@@ -1,0 +1,10 @@
+<input  type="text"   [(ngModel)] = 'taixiuId'>
+<button (click)="getDataFromGame()">Click</button>
+
+<p>total bet tai : {{totalBetTai}}</p>
+<p>total bet xiu : {{totalBetXiu}}</p>
+<p>total bet  : {{totalBetXiu + totalBetTai}}</p>
+<p>winamount : {{winAmount}}</p>
+<p>result : {{result}}</p>
+<p>Winner : {{winAmount && (+result > 10 ? "Tai"  : "Xiu") || ''}}</p>
+
